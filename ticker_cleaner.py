@@ -15,4 +15,5 @@ def yahoo_finance_clean(ticker):
     ticker_hist_monthly = ticker_hist['Close'].resample('MS')
     ticker_monthly_mean = pd.DataFrame(ticker_hist_monthly.mean())
     
-    return ticker_monthly_mean.reindex(index = ticker_monthly_mean.index[::-1])
+    return ticker_monthly_mean.reindex(index=ticker_monthly_mean.index[::-1])
+
