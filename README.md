@@ -25,3 +25,40 @@ Answer a small market wealth mgmt. company's inquiry for finding a financial veh
 
 ### Summary of Included Files:
 The following files are included under the Module_4_Project folder within the GitHub repository:
+- Mod4_TS_Technical.ipynb
+    - Jupyter notebook for techincal audience
+    - PEP 8 Standards
+    - Imports cleaning, stationarity check, auto_arima, and future_dates modules
+    - Library importation, statistical testing, and forecasting with visualizations
+
+- Mod4_Non_Techical.ipynb
+    - Jupyter notebook for non-technical audience
+    - Description of stakeholder needs and goals of the analysis
+    - Visualizations with detailed non-technical explanations of what each step is accomplishing and what outcomes mean
+    - Actionable insights for stakeholder
+
+- Mod4_TS_Full.ipynb
+    - Technical jupyter notebook which contains scratch work and non-formal coding
+    
+- ticker_cleaner.py
+    - Packaged module for importation and cleaning of financial data for respective financial instruments
+    - Imports, cleans, and arranges financial information into operable Pandas DataFrame
+    - Resamples daily inputs into monthly averages
+    - Returns Time Series dataframe for analysis and modeling
+
+- stationarity_check.py
+    - Contains function to check stationarity of the given time series
+    - Takes rolling mean & rolling standard deviation
+    - Performs Dickey-Fuller stationarity check
+    - Plots rolling mean, rolling standard deviation, and original series
+    - Outputs visualization as well as results of Dickey-Fuller test 
+    
+- Auto_ARIMA.py
+    - Creates all possible combinations of SARIMA parameter inputs
+    - Performs SARIMAX model on every combination and returns combination with lowest output AIC value
+
+- future_dates.py
+    - Adds future Datetime entries to Time Series dataframe which will be populated by predicted values for corresponding index points
+
+
+
