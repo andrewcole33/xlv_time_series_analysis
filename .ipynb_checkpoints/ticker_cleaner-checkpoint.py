@@ -3,7 +3,7 @@ import pandas as pd
 
 def yahoo_finance_clean(ticker):
     '''
-    Function to gather financial data from Yahoo Finance using yfinance Python library. Converts imported data into operable Pandas DataFrame.
+    Function to gather financial data from Yahoo Finance using yfinance Python library. Finds the Closing price data and groups it into monthly averages. Then it converts imported data into operable Pandas DataFrame.
     
     Input: Asset's ticker symbol (type = 'String')
     
@@ -16,4 +16,3 @@ def yahoo_finance_clean(ticker):
     ticker_monthly_mean = pd.DataFrame(ticker_hist_monthly.mean())
     
     return ticker_monthly_mean.reindex(index = ticker_monthly_mean.index[::-1])
-    
