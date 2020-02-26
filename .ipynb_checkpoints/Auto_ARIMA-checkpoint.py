@@ -1,4 +1,6 @@
 import itertools
+import warnings
+import pandas as pd
 
 def auto_arima():
     '''
@@ -9,12 +11,12 @@ def auto_arima():
     Output: The AR/MA parameter combination with the lowest resulting AIC value
     
     '''
+    warnings.filterwarnings('ignore')
     p = d = q = range(0,3)
     pdq = list(itertools.product(p,d,q))
     pdqs = [(x[0], x[1], x[2], 12) for x in list(itertools.product(p,d,q))]
     
     
-    warnings.filterwarnings(action='once')
     ans = []
     for comb in pdq:
         for combs in pdqs:
