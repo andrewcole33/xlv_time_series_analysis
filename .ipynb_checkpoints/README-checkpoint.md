@@ -1,9 +1,9 @@
 # Module 4 Project - XLV Forecasting: Time Series Analysis
 
 ## Data Scientist: Andrew Cole
-
+--
 ### Goals: 
-Answer a small market wealth mgmt. company's inquiry for finding a financial vehicle for it's investor pool which has historically produced strong returns and will continue to do so well into the future. Time Series analysis & forecasting will be used to determine the future performance.
+Answer a small market wealth mgmt. company's inquiry for finding a financial vehicle for it's investor pool which has historically produced strong returns and will continue to do so well into the future. Time Series Modeling & Forecasting will be used to determine the future performance.
     - What is a financial vehicle which has produced historic increase in value to it's investors?
     - Will the fund (XLV Healthcare Mutual Fund) continue to increase in value?
     - Create a model which accurately tracks the historic movement of the fund as well as confidently forecasts the value increase into the future.
